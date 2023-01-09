@@ -11,7 +11,7 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-  // Comentario
+  // Comentario Nuevo
 }
 
 // No modifiques nada debajo de esta linea //
