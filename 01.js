@@ -11,7 +11,15 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-  // Comentario Nuevo
+  var arreglor = [];
+  array.forEach(function(dato){
+    if(!(isNaN(dato))){   //Función que permite saber si un dato es númerico
+      arreglor.push(dato);
+    }
+  });
+  console.log("ARREGLO INICIAL => " + array);
+  console.log("ARREGLO FINAL   => " + arreglor);
+  return arreglor;
 }
 
 // No modifiques nada debajo de esta linea //

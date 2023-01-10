@@ -24,7 +24,18 @@ function filtrar(funcion) {
   // productos.filtrar(function(p) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
-
+  Array.prototype.filtrar = function(funcion){  //Funcion que se agregará al prototipo general de la clase Array
+    var ArrayR = [];
+    var c;
+    console.log("THIS => ");
+    console.log(this)
+    for(c=0;c<this.length;c++){  //se usa this como el objeto que se recibe ya que no sabemos el nombre
+      if(funcion(this[c])){
+        ArrayR.push(this[c]);
+      }
+    }
+    return ArrayR;
+  }
 };
 
 // No modifiques nada debajo de esta linea //
